@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tailwind Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@600&display=swap" rel="stylesheet">
+
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+                screens:{
+                    "sm":"480px"
+                }
+              
+            },
+            fontFamily:{
+                nunito:['Nunito Sans', 'sans-serif']
+            }
+          }
+        }
+      </script>
+</head>
+<body>
+    <!-- into section -->
+    <div class="h-1/2 lg:h-screen bg-gradient-to-t from-indigo-200 ">
+        <!-- navbar --> 
+        <nav class="fixed top-0 bg-white w-full">
+            <div class="container mx-auto py-5 flex items-center justify-between">
+                <div class="font-bold text-2xl text-indigo-900 " >ROHITcO.</div>
+            
+            <ul class="hidden md:flex space-x-10 text-gray-600 font-bold text-sm uppercase">
+                <li class="hover:text-lime-300">
+                    <a href="http://">HOME</a>
+                </li>
+                <li class="hover:text-lime-300">
+                    <a href="http://">ABOUT</a>
+                </li>
+                <li class="hover:text-lime-300">
+                    <a href="http://">WORKS</a>
+                </li>
+                <li class="hover:text-lime-300">
+                    <a href="http://">SERVICES</a>
+                </li>
+                <li class="hover:text-lime-300">
+                    <a href="http://">CONTACT</a>
+                </li>
+            </ul>
+            <div class="space-y-1 md:hidden cursor-pointer">
+                <div class="w-6 h-0.5 bg-black"></div>
+                <div class="w-6 h-0.5 bg-black"></div>
+                <div class="w-6 h-0.5 bg-black"></div>
+            </div>
+            </div>
+            <ul class=" hidden bg-indigo-900 top-0 absolute left-0 w-full p-10 space-y-10 text-white text-center">
+                <li >
+                    <a href="http://">HOME</a>
+                </li>
+                <li >
+                    <a href="http://">ABOUT</a>
+                </li>
+                <li >
+                    <a href="http://">WORKS</a>
+                </li>
+                <li >
+                    <a href="http://">SERVICES</a>
+                </li>
+                <li >
+                    <a href="http://">CONTACT</a>
+                </li>
+            </ul>
+                
+                
+        </nav>
+        
+    </div>
+     
+</body>
+</html>
